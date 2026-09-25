@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Polas Ahmed | SEO &amp; AIO Specialist</title>
+<meta name="description" content="Get in touch with Polas Ahmed, an SEO and AI Optimization specialist based in Dhaka, currently looking for full-time remote roles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F172A;
+    --muted:#5B677A;
+    --paper:#FFFFFF;
+    --accent:#2563EB;
+    --accent-tint:#EFF6FF;
+    --border:#E2E8F0;
+    --field-bg:#F8FAFC;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'IBM Plex Sans',sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  h1,.logo{font-family:'Sora',sans-serif;}
+  a{color:inherit;text-decoration:none;}
+  svg{display:block;}
+
+  /* Header */
+  .site-header{border-bottom:1px solid var(--border);}
+  .header-inner{max-width:1120px;margin:0 auto;padding:20px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;}
+  .logo{font-size:19px;font-weight:700;letter-spacing:-0.01em;}
+  nav.main-nav{display:flex;gap:28px;}
+  nav.main-nav a{font-size:15px;color:var(--muted);transition:color .15s ease;}
+  nav.main-nav a:hover,nav.main-nav a.active{color:var(--ink);}
+  nav.main-nav a.active{position:relative;}
+  nav.main-nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:-22px;height:2px;background:var(--accent);}
+  .header-actions{display:flex;gap:12px;align-items:center;}
+  .btn{display:inline-block;padding:10px 20px;border-radius:6px;font-size:14px;font-weight:600;border:1px solid transparent;cursor:pointer;transition:.15s ease;}
+  .btn-outline{border-color:var(--border);color:var(--ink);}
+  .btn-outline:hover{border-color:var(--ink);}
+  .btn-primary{background:var(--accent);color:#fff;}
+  .btn-primary:hover{background:#1D4ED8;}
+  .nav-toggle{display:none;background:none;border:none;font-size:22px;cursor:pointer;color:var(--ink);}
+
+  /* Main */
+  .wrap{max-width:1120px;margin:0 auto;padding:0 32px;}
+  .contact-section{padding:88px 0 100px;display:grid;grid-template-columns:0.85fr 1fr;gap:80px;}
+
+  .intro h1{font-size:38px;line-height:1.25;font-weight:700;letter-spacing:-0.01em;max-width:440px;}
+  .intro .lead{margin-top:16px;font-size:16px;color:var(--muted);max-width:420px;}
+
+  .status-line{margin-top:22px;display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);}
+  .status-dot{width:7px;height:7px;border-radius:50%;background:#16A34A;flex-shrink:0;}
+
+  .info-rows{margin-top:44px;display:flex;flex-direction:column;gap:22px;}
+  .info-row{display:flex;align-items:center;gap:16px;}
+  .info-icon{
+    width:42px;height:42px;border-radius:10px;background:var(--accent-tint);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);
+  }
+  .info-row .info-text .label{font-size:13px;color:var(--muted);}
+  .info-row .info-text a,.info-row .info-text span.value{font-size:16px;color:var(--ink);}
+  .info-row .info-text a:hover{color:var(--accent);}
+
+  form.contact-form{display:flex;flex-direction:column;gap:16px;}
+  .field input,.field textarea{
+    width:100%;font-family:inherit;font-size:15px;color:var(--ink);
+    padding:14px 16px;border:1px solid var(--border);border-radius:8px;background:var(--field-bg);
+    outline:none;transition:border-color .15s ease;
+  }
+  .field input:focus,.field textarea:focus{border-color:var(--accent);}
+  .field textarea{resize:vertical;min-height:140px;}
+  .contact-form .btn-primary{margin-top:2px;padding:13px 30px;align-self:flex-start;}
+  .form-note{font-size:13px;color:#94A3B8;}
+
+  footer{border-top:1px solid var(--border);padding:28px 0;}
+  .footer-inner{max-width:1120px;margin:0 auto;padding:0 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+  .footer-inner p{font-size:13px;color:var(--muted);}
+  .footer-links{display:flex;gap:20px;}
+  .footer-links a{font-size:13px;color:var(--muted);}
+  .footer-links a:hover{color:var(--ink);}
+
+  @media (max-width: 860px){
+    .header-inner{
+      min-height:68px;
+      padding:16px 20px;
+      gap:12px;
+    }
+
+    .logo{
+      font-size:18px;
+      white-space:nowrap;
+    }
+
+    nav.main-nav{
+      position:fixed;
+      top:68px;
+      left:0;
+      right:0;
+      bottom:0;
+      width:100%;
+      background:rgba(255,255,255,.99);
+      backdrop-filter:blur(10px);
+      flex-direction:column;
+      align-items:stretch;
+      padding:20px 24px 32px;
+      gap:0;
+      transform:translateX(100%);
+      transition:transform .25s ease;
+      z-index:40;
+      overflow-y:auto;
+      box-shadow:-12px 0 32px rgba(15,23,42,.08);
+    }
+
+    nav.main-nav.open{transform:translateX(0);}
+
+    nav.main-nav a{
+      width:100%;
+      padding:15px 0;
+      font-size:17px;
+      border-bottom:1px solid var(--border);
+    }
+
+    nav.main-nav a.active::after{display:none;}
+
+    .header-actions{
+      gap:9px;
+      flex-shrink:0;
+    }
+
+    .header-actions .btn-outline{display:none;}
+
+    .header-actions .btn-primary{
+      padding:10px 15px;
+      font-size:14px;
+      white-space:nowrap;
+    }
+
+    .nav-toggle{
+      display:flex;
+      width:42px;
+      height:42px;
+      align-items:center;
+      justify-content:center;
+      border:1px solid var(--border);
+      border-radius:9px;
+      background:#fff;
+      color:var(--ink);
+      font-size:22px;
+      line-height:1;
+      cursor:pointer;
+    }
+
+    /* Give the content its own horizontal safety area.
+       This prevents headings and form fields from touching the screen edges. */
+    .contact-section{
+      width:100%;
+      grid-template-columns:1fr;
+      gap:40px;
+      padding:54px 20px 72px;
+    }
+
+    .intro{
+      min-width:0;
+    }
+
+    .intro h1{
+      font-size:clamp(30px,8.4vw,38px);
+      line-height:1.16;
+      letter-spacing:-.025em;
+      max-width:100%;
+    }
+
+    .intro .lead{
+      margin-top:18px;
+      font-size:16px;
+      line-height:1.7;
+      max-width:100%;
+    }
+
+    .status-line{
+      margin-top:20px;
+      align-items:flex-start;
+      gap:9px;
+      font-size:14px;
+      line-height:1.55;
+    }
+
+    .status-dot{
+      margin-top:8px;
+    }
+
+    .info-rows{
+      margin-top:30px;
+      gap:18px;
+    }
+
+    .info-row{
+      align-items:flex-start;
+      gap:13px;
+      min-width:0;
+    }
+
+    .info-icon{
+      width:40px;
+      height:40px;
+      border-radius:10px;
+    }
+
+    .info-row .info-text{
+      min-width:0;
+    }
+
+    .info-row .info-text .label{
+      font-size:13px;
+    }
+
+    .info-row .info-text a,
+    .info-row .info-text span.value{
+      display:block;
+      margin-top:2px;
+      font-size:15px;
+      line-height:1.55;
+      overflow-wrap:anywhere;
+      word-break:break-word;
+    }
+
+    form.contact-form{
+      width:100%;
+      gap:14px;
+    }
+
+    .field{
+      width:100%;
+    }
+
+    .field input,
+    .field textarea{
+      width:100%;
+      min-width:0;
+      font-size:16px;
+      padding:14px 15px;
+      border-radius:10px;
+    }
+
+    .field textarea{
+      min-height:150px;
+    }
+
+    .contact-form .btn-primary{
+      width:100%;
+      align-self:stretch;
+      padding:14px 20px;
+      margin-top:2px;
+    }
+
+    .form-note{
+      font-size:12px;
+      line-height:1.5;
+    }
+
+    footer{
+      padding:24px 0;
+    }
+
+    .footer-inner{
+      padding:0 20px;
+      flex-direction:column;
+      text-align:center;
+      gap:14px;
+    }
+
+    .footer-links{
+      gap:16px;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+  }
+
+  @media (max-width: 480px){
+    .header-inner{
+      padding-left:16px;
+      padding-right:16px;
+    }
+
+    .logo{
+      font-size:17px;
+    }
+
+    .header-actions .btn-primary{
+      padding:9px 12px;
+      font-size:13px;
+    }
+
+    .nav-toggle{
+      width:40px;
+      height:40px;
+    }
+
+    .contact-section{
+      padding:46px 16px 64px;
+      gap:36px;
+    }
+
+    .intro h1{
+      font-size:30px;
+      line-height:1.17;
+    }
+
+    .intro .lead{
+      font-size:15px;
+      line-height:1.7;
+    }
+
+    .status-line{
+      font-size:13px;
+    }
+
+    .info-rows{
+      margin-top:27px;
+      gap:17px;
+    }
+
+    .info-row .info-text a,
+    .info-row .info-text span.value{
+      font-size:14px;
+    }
+
+    .field input,
+    .field textarea{
+      padding:13px 14px;
+      border-radius:9px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    nav.main-nav{transition:none;}
+  }
+
+  </style>
+<style id="portfolio-global-shell">
+/* =========================================================
+   POLAS AHMED — GLOBAL PORTFOLIO SHELL
+   One header + one footer for every page, including case studies.
+   ========================================================= */
+.portfolio-global-header,
+.portfolio-global-header *{box-sizing:border-box}
+.portfolio-global-header{
+  position:sticky !important;
+  top:0 !important;
+  z-index:99999 !important;
+  width:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+  background:rgba(248,250,252,.94) !important;
+  border:0 !important;
+  border-bottom:1px solid #e2e8f0 !important;
+  box-shadow:0 1px 0 rgba(15,23,42,.02) !important;
+  backdrop-filter:blur(14px) saturate(150%) !important;
+  -webkit-backdrop-filter:blur(14px) saturate(150%) !important;
+}
+.portfolio-header-inner{
+  width:min(1180px,calc(100% - 48px));
+  min-height:76px;
+  margin:0 auto !important;
+  padding:0 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  gap:28px !important;
+}
+.portfolio-brand{
+  display:inline-flex !important;
+  align-items:center !important;
+  color:#0f172a !important;
+  text-decoration:none !important;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif !important;
+  font-size:21px !important;
+  font-weight:750 !important;
+  letter-spacing:-.035em !important;
+  line-height:1 !important;
+  white-space:nowrap !important;
+}
+.portfolio-desktop-nav{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:30px !important;
+  margin-left:auto !important;
+}
+.portfolio-desktop-nav a,
+.portfolio-mobile-menu a{
+  color:#64748b !important;
+  text-decoration:none !important;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif !important;
+  font-size:14px !important;
+  font-weight:600 !important;
+  transition:color .2s ease,border-color .2s ease,background .2s ease !important;
+}
+.portfolio-desktop-nav a{
+  position:relative !important;
+  padding:29px 1px 27px !important;
+  border-bottom:2px solid transparent !important;
+}
+.portfolio-desktop-nav a:hover,
+.portfolio-desktop-nav a[aria-current="page"]{color:#2563eb !important}
+.portfolio-desktop-nav a[aria-current="page"]{border-bottom-color:#2563eb !important}
+.portfolio-header-actions{display:flex !important;align-items:center !important;gap:12px !important}
+.portfolio-btn{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  min-height:48px !important;
+  padding:0 20px !important;
+  border-radius:9px !important;
+  border:1px solid transparent !important;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif !important;
+  font-size:14px !important;
+  font-weight:700 !important;
+  line-height:1 !important;
+  text-decoration:none !important;
+  white-space:nowrap !important;
+  transition:transform .2s ease,background .2s ease,border-color .2s ease,color .2s ease,box-shadow .2s ease !important;
+}
+.portfolio-btn:hover{transform:translateY(-1px) !important}
+.portfolio-btn-ghost{background:#fff !important;color:#0f172a !important;border-color:#dbe3ee !important;box-shadow:0 1px 2px rgba(15,23,42,.03) !important}
+.portfolio-btn-ghost:hover{border-color:#94a3b8 !important}
+.portfolio-btn-primary{background:#2563eb !important;color:#fff !important;border-color:#2563eb !important;box-shadow:0 8px 20px rgba(37,99,235,.18) !important}
+.portfolio-btn-primary:hover{background:#1d4ed8 !important;border-color:#1d4ed8 !important}
+.portfolio-menu-toggle{
+  display:none !important;
+  width:44px !important;height:44px !important;
+  padding:0 !important;margin:0 !important;
+  border:1px solid #dbe3ee !important;border-radius:9px !important;
+  background:#fff !important;color:#0f172a !important;
+  align-items:center !important;justify-content:center !important;flex-direction:column !important;gap:4px !important;
+  cursor:pointer !important;
+}
+.portfolio-menu-toggle span{display:block !important;width:18px !important;height:2px !important;background:#0f172a !important;border-radius:99px !important}
+.portfolio-mobile-menu{display:none !important}
+/* Disable every previous page-specific header visually. Their original markup remains hidden
+   so legacy page scripts do not throw errors or lose their case-study behavior. */
+body > header:not(.portfolio-global-header){display:none !important}
+
+.portfolio-global-footer,
+.portfolio-global-footer *{box-sizing:border-box}
+.portfolio-global-footer{
+  position:relative !important;
+  width:100% !important;
+  margin:80px 0 0 !important;
+  padding:0 !important;
+  background:#0b1220 !important;
+  color:#cbd5e1 !important;
+  border:0 !important;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif !important;
+}
+.portfolio-footer-inner{
+  width:min(1180px,calc(100% - 48px));
+  margin:0 auto !important;
+  padding:68px 0 56px !important;
+  display:grid !important;
+  grid-template-columns:minmax(250px,1.7fr) repeat(3,minmax(130px,1fr)) !important;
+  gap:44px !important;
+}
+.portfolio-footer-brand .portfolio-brand{color:#fff !important;font-size:22px !important;margin-bottom:14px !important}
+.portfolio-footer-brand p{margin:0 0 10px !important;color:#e2e8f0 !important;font-size:14px !important;line-height:1.6 !important}
+.portfolio-footer-brand .portfolio-footer-description{max-width:360px !important;color:#94a3b8 !important;margin-top:14px !important}
+.portfolio-footer-column{display:flex !important;flex-direction:column !important;align-items:flex-start !important;gap:11px !important}
+.portfolio-footer-column h3{margin:0 0 9px !important;color:#fff !important;font-size:13px !important;font-weight:700 !important;letter-spacing:.04em !important;text-transform:uppercase !important}
+.portfolio-footer-column a{color:#94a3b8 !important;text-decoration:none !important;font-size:14px !important;line-height:1.5 !important;transition:color .2s ease !important}
+.portfolio-footer-column a:hover{color:#fff !important}
+.portfolio-footer-bottom{
+  width:min(1180px,calc(100% - 48px));
+  margin:0 auto !important;
+  padding:20px 0 24px !important;
+  border-top:1px solid rgba(148,163,184,.18) !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  gap:20px !important;
+  color:#64748b !important;
+  font-size:12px !important;
+}
+body > footer:not(.portfolio-global-footer){display:none !important}
+
+@media (max-width:900px){
+  .portfolio-header-inner{min-height:70px !important}
+  .portfolio-desktop-nav,.portfolio-header-actions{display:none !important}
+  .portfolio-menu-toggle{display:flex !important}
+  .portfolio-mobile-menu{
+    position:absolute !important;
+    left:0 !important;right:0 !important;top:70px !important;
+    padding:14px 24px 22px !important;
+    background:rgba(248,250,252,.98) !important;
+    border-bottom:1px solid #e2e8f0 !important;
+    box-shadow:0 18px 35px rgba(15,23,42,.08) !important;
+    backdrop-filter:blur(14px) !important;
+  }
+  .portfolio-mobile-menu[data-open="true"]{display:block !important}
+  .portfolio-mobile-menu nav{display:flex !important;flex-direction:column !important;gap:2px !important}
+  .portfolio-mobile-menu nav a{display:block !important;padding:13px 12px !important;border-radius:8px !important}
+  .portfolio-mobile-menu nav a:hover,.portfolio-mobile-menu nav a[aria-current="page"]{color:#2563eb !important;background:#eff6ff !important}
+  .portfolio-mobile-actions{display:grid !important;grid-template-columns:1fr 1fr !important;gap:10px !important;margin-top:12px !important}
+  .portfolio-mobile-actions .portfolio-btn{width:100% !important}
+  .portfolio-footer-inner{grid-template-columns:1fr 1fr !important;gap:36px 24px !important}
+}
+@media (max-width:600px){
+  .portfolio-header-inner,.portfolio-footer-inner,.portfolio-footer-bottom{width:min(100% - 32px,1180px) !important}
+  .portfolio-brand{font-size:19px !important}
+  .portfolio-footer-inner{padding:52px 0 42px !important;grid-template-columns:1fr 1fr !important}
+  .portfolio-footer-brand{grid-column:1 / -1 !important}
+  .portfolio-footer-bottom{flex-direction:column !important;align-items:flex-start !important;padding-bottom:20px !important}
+  .portfolio-global-footer{margin-top:56px !important}
+}
+@media (prefers-reduced-motion:reduce){.portfolio-btn,.portfolio-desktop-nav a,.portfolio-footer-column a{transition:none !important}}
+</style>
+</head>
+<body>
+
+<header class="portfolio-global-header" data-portfolio-header>
+  <div class="portfolio-header-inner">
+    <a class="portfolio-brand" href="index.html" aria-label="Polas Ahmed — Home">Polas Ahmed</a>
+    <nav class="portfolio-desktop-nav" aria-label="Main navigation">
+      <a data-page="home" href="index.html">Home</a>
+      <a data-page="about" href="about.html">About</a>
+      <a data-page="skills" href="skills.html">Skills</a>
+      <a data-page="projects" href="projects.html">Projects</a>
+      <a data-page="contact" href="contact.html">Contact</a>
+    </nav>
+    <div class="portfolio-header-actions">
+      <a class="portfolio-btn portfolio-btn-ghost" href="resume.pdf" download>Resume</a>
+      <a class="portfolio-btn portfolio-btn-primary" href="contact.html">Hire Me</a>
+    </div>
+    <button class="portfolio-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="portfolio-mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="portfolio-mobile-menu" id="portfolio-mobile-menu" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <a data-page="home" href="index.html">Home</a>
+      <a data-page="about" href="about.html">About</a>
+      <a data-page="skills" href="skills.html">Skills</a>
+      <a data-page="projects" href="projects.html">Projects</a>
+      <a data-page="contact" href="contact.html">Contact</a>
+    </nav>
+    <div class="portfolio-mobile-actions">
+      <a class="portfolio-btn portfolio-btn-ghost" href="resume.pdf" download>Resume</a>
+      <a class="portfolio-btn portfolio-btn-primary" href="contact.html">Hire Me</a>
+    </div>
+  </div>
+</header>
+<div class="portfolio-legacy-header" aria-hidden="true" style="display:none!important"><header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Polas Ahmed</a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="resume.pdf" class="btn btn-outline">Resume</a>
+      <a href="mailto:info@polasahmed.com" class="btn btn-primary">Hire Me</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header></div>
+
+<main class="wrap contact-section">
+  <div class="intro">
+    <h1>Let's talk about your next SEO hire.</h1>
+    <p class="lead">I grew one client's organic impressions to 2.57M, and I'd like to bring that kind of impact to your team.</p>
+    <div class="status-line">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span>Open to full-time roles, remote only — replies within 24 hours</span>
+    </div>
+
+    <div class="info-rows">
+      <div class="info-row">
+        <span class="info-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6.5l9 6 9-6" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
+        </span>
+        <div class="info-text">
+          <p class="label">Email</p>
+          <a href="mailto:info@polasahmed.com">info@polasahmed.com</a>
+        </div>
+      </div>
+      <div class="info-row">
+        <span class="info-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="4"/><text x="12" y="16" font-family="Sora, sans-serif" font-size="10" font-weight="700" fill="currentColor" stroke="none" text-anchor="middle">in</text></svg>
+        </span>
+        <div class="info-text">
+          <p class="label">LinkedIn</p>
+          <a href="https://www.linkedin.com/in/polas-ahmed/" target="_blank" rel="noopener">linkedin.com/in/polas-ahmed</a>
+        </div>
+      </div>
+      <div class="info-row">
+        <span class="info-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+        </span>
+        <div class="info-text">
+          <p class="label">Location</p>
+          <span class="value">Dhaka, Bangladesh — GMT+6</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <form class="contact-form" id="contactForm">
+    <div class="field">
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+    </div>
+    <div class="field">
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+    </div>
+    <div class="field">
+      <textarea id="message" name="message" placeholder="Tell me about the role" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send message</button>
+    <p class="form-note">Opens your email client with the message pre-filled, addressed to info@polasahmed.com.</p>
+  </form>
+</main>
+
+<footer class="portfolio-global-footer">
+  <div class="portfolio-footer-inner">
+    <div class="portfolio-footer-brand">
+      <a class="portfolio-brand" href="index.html">Polas Ahmed</a>
+      <p>SEO &amp; AI Search Strategist</p>
+      <p class="portfolio-footer-description">Building stronger organic visibility, search authority, and measurable growth for modern brands.</p>
+    </div>
+    <div class="portfolio-footer-column">
+      <h3>Navigation</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="portfolio-footer-column">
+      <h3>Expertise</h3>
+      <a href="skills.html">SEO Strategy</a>
+      <a href="skills.html">Technical SEO</a>
+      <a href="skills.html">Local SEO</a>
+      <a href="skills.html">AI Search / AEO</a>
+      <a href="projects.html">Case Studies</a>
+    </div>
+    <div class="portfolio-footer-column">
+      <h3>Connect</h3>
+      <a href="https://www.linkedin.com/in/polas-ahmed/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/polasahmed0" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:info@polasahmed.com">Email Me</a>
+      <a href="contact.html">Work With Me</a>
+    </div>
+  </div>
+  <div class="portfolio-footer-bottom">
+    <span>© 2026 Polas Ahmed. All rights reserved.</span>
+    <span>SEO &amp; AI Search Portfolio</span>
+  </div>
+</footer>
+<div class="portfolio-legacy-footer" aria-hidden="true" style="display:none!important"><footer>
+  <div class="footer-inner">
+    <p>© 2026 Polas Ahmed. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/polas-ahmed/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:info@polasahmed.com">Email</a>
+    </div>
+  </div>
+</footer></div>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const nav = document.getElementById('mainNav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+    toggle.textContent = open ? '×' : '☰';
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.textContent = '☰';
+      document.body.style.overflow = '';
+    });
+  });
+
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    const subject = encodeURIComponent('Job Inquiry from ' + name);
+    const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+    window.location.href = 'mailto:info@polasahmed.com?subject=' + subject + '&body=' + body;
+  });
+</script>
+
+<script id="portfolio-global-shell-js">
+(function(){
+  const header = document.querySelector('[data-portfolio-header]');
+  if(!header) return;
+  const current = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  const page = current === 'index.html' || current === '' ? 'home'
+    : current === 'about.html' ? 'about'
+    : current === 'skills.html' ? 'skills'
+    : current === 'projects.html' || /^(better-appliance-dmv|iv-better|better-appliance-md|legacy-rides|deluxeside|streetwearness|highclassrep|aqualuxe)\.html$/.test(current) ? 'projects'
+    : current === 'contact.html' ? 'contact' : '';
+  header.querySelectorAll('[data-page]').forEach(function(link){
+    if(link.getAttribute('data-page') === page){
+      link.setAttribute('aria-current','page');
+    }
+  });
+  const toggle = header.querySelector('.portfolio-menu-toggle');
+  const menu = header.querySelector('.portfolio-mobile-menu');
+  function closeMenu(){
+    if(!toggle || !menu) return;
+    menu.removeAttribute('data-open');
+    menu.setAttribute('aria-hidden','true');
+    toggle.setAttribute('aria-expanded','false');
+    toggle.setAttribute('aria-label','Open menu');
+  }
+  function openMenu(){
+    if(!toggle || !menu) return;
+    menu.setAttribute('data-open','true');
+    menu.setAttribute('aria-hidden','false');
+    toggle.setAttribute('aria-expanded','true');
+    toggle.setAttribute('aria-label','Close menu');
+  }
+  if(toggle && menu){
+    toggle.addEventListener('click',function(){
+      menu.getAttribute('data-open') === 'true' ? closeMenu() : openMenu();
+    });
+    menu.querySelectorAll('a').forEach(function(link){ link.addEventListener('click',closeMenu); });
+    document.addEventListener('click',function(e){
+      if(!header.contains(e.target)) closeMenu();
+    });
+    window.addEventListener('resize',function(){ if(window.innerWidth > 900) closeMenu(); });
+  }
+})();
+</script>
+</body>
+</html>
